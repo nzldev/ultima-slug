@@ -1,7 +1,5 @@
+# ultima-slug
 
-# ultimaSlug
-
-[![npm-version]][npm] [![coveralls-status]][coveralls]
 
 ```js
 var ultimaSlug = require('ultima-slug')

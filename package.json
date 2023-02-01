@@ -1,0 +1,40 @@
+{
+  "name": "ultima-slug",
+  "version": "1.0.0",
+  "description": "'UltimaSlug' is a term used to describe the process of converting a string into a URL-friendly `slug`. This typically involves removing spaces and special characters, converting to lowercase, and replacing spaces with hyphens. The resulting string can be used as a part of a URL or file name, making it easier to reference and use in web applications.",
+  "keywords": [
+    "UltimaSlug",
+    "ultima-slug",
+    "slug",
+    "url"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/nzldev/ultima-slug",
+  "author": "Nazrul Islam Nadeem <nazrul.devs@gmail.com> (https://nzldev.github.io)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nzldev/ultima-slug.git"
+  },
+  "devDependencies": {
+    "coveralls": "^3.1.0",
+    "mocha": "^7.2.0",
+    "nyc": "^15.1.0"
+  },
+  "main": "./ultima-slug.js",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "ultima-slug.d.ts",
+    "ultima-slug.js"
+  ],
+  "types": "ultima-slug.d.ts",
+  "scripts": {
+    "build": "node bin/build",
+    "test:ci": "npx mocha --recursive",
+    "test:cov": "npx nyc --reporter=lcov --reporter=text-summary mocha -- --recursive",
+    "test": "npm run build && npm run test:ci"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}
